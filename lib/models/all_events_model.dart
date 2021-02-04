@@ -1,3 +1,5 @@
+import 'package:intl/intl.dart';
+
 class AllEvents {
   String name;
   String dateTime;
@@ -33,6 +35,7 @@ class AllEvents {
   AllEvents.fromJson(Map<String, dynamic> json) {
     name = json['name'];
     dateTime = json['dateTime'];
+
     bookBy = json['bookBy'];
     ticketsSold = json['ticketsSold'];
     maxTickets = json['maxTickets'];

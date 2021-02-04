@@ -33,6 +33,7 @@ dependencies:
   intl: ^0.16.1
   connectivity: ^0.4.2
   flutter_staggered_animations: "^0.1.2"
+  cached_network_image: ^2.5.0
 
 dev_dependencies:
   flutter_test:
