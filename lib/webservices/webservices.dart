@@ -11,8 +11,10 @@ class WebServices {
     });
     if (response.statusCode == 200) {
       var data = json.decode(response.body);
-      var rest = data['allEvents'] as List;
-      return rest.map<AllEvents>((json) => AllEvents.fromJson(json)).toList();
+      var allEvents = data['allEvents'] as List;
+      return allEvents
+          .map<AllEvents>((json) => AllEvents.fromJson(json))
+          .toList();
     } else {
       throw Exception("Failed to get all events");
     }
